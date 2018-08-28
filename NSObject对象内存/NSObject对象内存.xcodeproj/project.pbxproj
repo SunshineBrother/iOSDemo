@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		28E2BDF52134E6E500474839 /* NSObject对象内存 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSObject对象内存"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E2BDF82134E6E500474839 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28E2BDFF21350A4300474839 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		28E2BDF72134E6E500474839 /* NSObject对象内存 */ = {
 			isa = PBXGroup;
 			children = (
+				28E2BDFF21350A4300474839 /* main.cpp */,
 				28E2BDF82134E6E500474839 /* main.m */,
 			);
 			path = "NSObject对象内存";

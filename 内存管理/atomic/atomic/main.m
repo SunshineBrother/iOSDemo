@@ -7,11 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Person.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        Person * p = [[Person alloc]init];
+        dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+        for (NSInteger i = 0; i < 10; i++) {
+            NSLog(@"------%ld------",i);
+            dispatch_async(queue, ^{
+                p.name = [NSString stringWithFormat:@"%ld",i];
+            });
+            dispatch_async(queue, ^{
+                [p.name release];
+            });
+        }
+        
+        [p release];
+        
     }
     return 0;
 }

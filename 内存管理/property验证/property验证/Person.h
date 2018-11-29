@@ -1,8 +1,8 @@
 //
 //  Person.h
-//  atomic
+//  property验证
 //
-//  Created by yunna on 2018/11/22.
+//  Created by yunna on 2018/11/29.
 //  Copyright © 2018年 yunna. All rights reserved.
 //
 
@@ -12,8 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSObject
 
-@property (atomic,copy) NSString *name;
-//@property (atomic,copy) NSString *name1;
+@property (nonatomic,copy) NSString *name;
 
 @end
 

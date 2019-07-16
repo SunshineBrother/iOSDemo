@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
         p.handsome = YES;
         
         NSLog(@"%zd",class_getInstanceSize([p class]));
-        
+        NSLog(@"%lu",sizeof(p));
         
         
     }
